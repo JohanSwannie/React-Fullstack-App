@@ -33,12 +33,12 @@ nav {
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
   word-spacing: 5px;
-  color: #eb3e3e;
+  color: #f58a8a;
   text-align: center;
   font-size: 1.4rem;
-  font-weight: 900;
+  font-weight: bolder;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #9d8f8f, 0.5px 0.65px 0.75px #fff;
+  text-shadow: 0.5px 0.65px 0.75px #fff;
   margin-right: 3vw;
 }
 
@@ -84,8 +84,9 @@ p {
 
 #img {
   width: 75vw;
-  height: 60vh;
-  opacity: 0.75;
+  height: 65vh;
+  opacity: 0.65;
+  mix-blend-mode: difference;
 }
 
 form {
