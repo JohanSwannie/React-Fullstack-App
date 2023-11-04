@@ -82,9 +82,14 @@ p {
   margin: 4rem auto;
 }
 
+.image_container {
+  background-color: rgba(105, 195, 179, 0.15);
+  opacity: 0.65;
+}
+
 #img {
-  width: 75vw;
-  height: 65vh;
+  width: 100vw;
+  height: 60vh;
   opacity: 0.65;
   mix-blend-mode: difference;
 }
