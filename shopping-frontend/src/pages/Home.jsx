@@ -11,9 +11,7 @@ export default function Home() {
       <h1 className="subheader">
         Hi {user ? `${user.name}` : ""} - Welcome to Swannies Music Shop
       </h1>
-      <div className="image_container">
-        <img id="img" src={musicshop} alt="boat" />
-      </div>
+      <img id="img" src={musicshop} alt="boat" />
     </div>
   );
 }
