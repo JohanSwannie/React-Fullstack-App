@@ -88,9 +88,8 @@ form {
 }
 
 .image {
-  width: 100%;
-  height: auto;
   opacity: 0.2;
+  margin: auto;
 }
 
 .form-fields {
