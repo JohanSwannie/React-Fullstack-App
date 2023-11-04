@@ -23,9 +23,9 @@ body {
 nav {
   position: fixed;
   top: 0.5rem;
-  left: 13vw;
+  left: 1vw;
   display: flex;
-  gap: 3.5rem;
+  gap: 2vw;
   width: 100vw;
 }
 
@@ -35,7 +35,7 @@ nav {
   word-spacing: 5px;
   color: #eb3e3e;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 900;
   text-decoration: none;
   text-shadow: 1px 1px 1px #9d8f8f, 0.5px 0.65px 0.75px #fff;
@@ -83,7 +83,7 @@ p {
 }
 
 #img {
-  width: 50vw;
+  width: 75vw;
   height: 60vh;
   opacity: 0.75;
 }
