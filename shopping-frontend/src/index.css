@@ -11,9 +11,8 @@ body {
   /* background-image: url("https://htmlcolorcodes.com/assets/images/colors/slate-gray-color-solid-background-1920x1080.png"); */
   background-image: url("https://cdn.wallpapersafari.com/15/98/I0tmB4.jpg");
   background-repeat: no-repeat;
+  background-color: #0a0a0a;
   background-size: cover;
-  background-color: black;
-  width: 100vw;
   min-width: 70vw;
   min-height: 70vh;
   color: #fff;
@@ -23,7 +22,7 @@ body {
 nav {
   position: fixed;
   top: 0.5rem;
-  left: 1vw;
+  left: 15vw;
   display: flex;
   gap: 2vw;
   width: 100vw;
@@ -82,16 +81,10 @@ p {
   margin: 4rem auto;
 }
 
-.image_container {
-  background-color: rgba(105, 195, 179, 0.15);
-  opacity: 0.65;
-}
-
 #img {
-  width: 100vw;
+  width: 75vw;
   height: 60vh;
   opacity: 0.65;
-  mix-blend-mode: difference;
 }
 
 form {
@@ -176,7 +169,7 @@ button:hover {
 
 .about_container {
   width: 80vw;
-  background: rgb(12, 45, 72);
+  background-color: rgba(0, 0, 0, 0.4);
   border: 1px solid #fff;
   padding: 2rem;
 }
