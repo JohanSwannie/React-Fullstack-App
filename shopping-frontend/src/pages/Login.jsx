@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import axios from "axios";
-import musicnotes from "../../public/musicnotes.jpg";
+import musicnotes from "/musicnotes.jpg";
 
 export default function Login() {
   const navigate = useNavigate();
