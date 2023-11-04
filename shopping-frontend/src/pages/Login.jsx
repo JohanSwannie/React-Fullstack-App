@@ -42,7 +42,7 @@ export default function Login() {
       <h1 className="header">Login</h1>
       <div className="container">
         <div className="image">
-          <img src={musicnotes} alt="music" />
+          <img src={musicnotes} alt="music" width="770" height="370" />
         </div>
         <div className="form-fields">
           <label htmlFor="email">Email</label>
