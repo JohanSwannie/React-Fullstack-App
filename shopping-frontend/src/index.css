@@ -26,6 +26,7 @@ nav {
   display: flex;
   gap: 2vw;
   width: 100vw;
+  height: 20vh;
 }
 
 .link {
