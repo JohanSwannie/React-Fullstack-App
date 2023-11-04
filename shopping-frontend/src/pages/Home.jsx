@@ -2,7 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { UserContext } from "../../context/userContext";
 
-import musicshop from "../../public/musicshop.jpg";
+import musicshop from "/musicshop.jpg";
 
 export default function Home() {
   const { user } = useContext(UserContext);
