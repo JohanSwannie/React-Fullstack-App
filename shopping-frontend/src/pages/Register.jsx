@@ -42,7 +42,7 @@ export default function Register() {
         <h1 className="header">Register</h1>
         <div className="container">
           <div className="image">
-            <img src={musicnotes2} alt="music2" />
+            <img src={musicnotes2} alt="music2" width="770" height="370" />
           </div>
 
           <div className="form-fields">
