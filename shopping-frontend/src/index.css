@@ -1,51 +1,64 @@
 * {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 650;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR116zUcXDz2XVqOQSv-3tuZ1NI1ov40QlM9A&usqp=CAU");
+  /* background-image: url("https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png"); */
+  /* background-image: url("https://htmlcolorcodes.com/assets/images/colors/slate-gray-color-solid-background-1920x1080.png"); */
+  background-image: url("https://cdn.wallpapersafari.com/15/98/I0tmB4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
   width: 100vw;
   min-width: 70vw;
   min-height: 70vh;
+  color: #fff;
   user-select: none;
 }
 
 nav {
   position: fixed;
   top: 0.5rem;
-  left: 54vw;
+  left: 13vw;
   display: flex;
+  gap: 3.5rem;
   width: 100vw;
 }
 
-.link:link {
-  color: #000;
+.link {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: #eb3e3e;
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 900;
   text-decoration: none;
+  text-shadow: 1px 1px 1px #9d8f8f, 0.5px 0.65px 0.75px #fff;
   margin-right: 3vw;
 }
 
-.link:visited {
-  color: steelblue;
-  font-weight: bold;
-}
-
-.link:active {
-  color: purple;
-  font-weight: bold;
+.link:hover {
+  color: rgb(247, 247, 246);
+  font-weight: 900;
+  text-shadow: 0.2px 0.5px 0.5px #0a0a0a;
 }
 
 .header {
   text-align: center;
   margin-bottom: 4rem;
+}
+
+h1 {
+  text-shadow: 1.5px 2.75px 3.5px #e91212;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 .subheader {
@@ -69,9 +82,10 @@ nav {
   margin: 4rem auto;
 }
 
-#img2 {
-  width: 75vw;
-  height: 65vh;
+#img {
+  width: 50vw;
+  height: 60vh;
+  opacity: 0.75;
 }
 
 form {
@@ -80,15 +94,16 @@ form {
 
 .container {
   position: relative;
-  width: 50vw;
+  width: 51vw;
   height: 50vh;
   margin: auto;
-  border: 1px solid #000;
+  border: 5px solid #f5f3f3;
+  border-style: double;
   background-color: rgba(63, 97, 143, 0.2);
 }
 
 .image {
-  opacity: 0.2;
+  opacity: 0.15;
   margin: auto;
 }
 
@@ -113,7 +128,7 @@ input {
   height: 5vh;
   border: 2px solid #fff;
   border-radius: 0.45rem;
-  background-color: rgba(1, 44, 132, 0.7);
+  background-color: rgba(10, 10, 10, 0.7);
   color: #fff;
   font-weight: bold;
   text-indent: 0.5rem;
@@ -134,7 +149,7 @@ button {
   font-size: 1em;
   font-weight: 600;
   font-family: inherit;
-  background-color: lightblue;
+  background-color: steelblue;
   cursor: pointer;
   transition: background-color 0.4s;
   text-align: center;
@@ -146,13 +161,21 @@ button {
 button:hover {
   background-color: #000;
   color: #f3f3f3;
-  border-color: #020308;
+  border: 2px solid #fff;
 }
 
 #logoutButton {
   margin-bottom: 2rem;
 }
 
+.about_container {
+  width: 80vw;
+  background: rgb(12, 45, 72);
+  border: 1px solid #fff;
+  padding: 2rem;
+}
+
 .about-text {
   padding: 0 5rem;
+  opacity: 0.85;
 }
