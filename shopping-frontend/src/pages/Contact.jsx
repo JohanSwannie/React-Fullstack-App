@@ -1,9 +1,8 @@
 import React from "react";
-import { useContext } from "react";
-import { UserContext } from "../../context/userContext";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
 const Contact = () => {
-  const { user } = useContext(UserContext);
+  const { user } = useShoppingCart();
   return (
     <div className="contact">
       <h1 className="subheader">
