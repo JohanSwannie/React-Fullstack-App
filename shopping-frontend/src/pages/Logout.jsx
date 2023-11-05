@@ -1,11 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
-import { UserContext } from "../../context/userContext";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 import { toast } from "react-hot-toast";
 import axios from "axios";
 
 export default function Logout() {
-  const { setUser } = useContext(UserContext);
+  const { setUser } = useShoppingCart();
   const navigate = useNavigate();
 
   const logoutUser = () => {
