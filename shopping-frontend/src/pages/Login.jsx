@@ -40,7 +40,7 @@ export default function Login() {
   return (
     <form onSubmit={loginUser}>
       <h1 className="header">Login</h1>
-      <div className="container">
+      <div className="contain">
         <div className="image">
           <img src={musicnotes} alt="music" width="775" height="370" />
         </div>
