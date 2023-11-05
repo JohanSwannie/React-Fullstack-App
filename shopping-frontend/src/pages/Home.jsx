@@ -1,11 +1,11 @@
 import React from "react";
-import { useContext } from "react";
-import { UserContext } from "../../context/userContext";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
 import musicshop from "/musicshop.jpg";
 
 export default function Home() {
-  const { user } = useContext(UserContext);
+  window.scrollTo(0, 0);
+  const { user } = useShoppingCart();
   return (
     <div className="home">
       <h1 className="subheader">
