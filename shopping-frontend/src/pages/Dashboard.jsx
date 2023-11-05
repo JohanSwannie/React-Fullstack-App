@@ -1,9 +1,9 @@
-import { useContext, useEffect, useState } from "react";
-import { UserContext } from "../../context/userContext";
+import { useEffect } from "react";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 import axios from "axios";
 
 export default function Dashboard() {
-  const { user, setUser } = useContext(UserContext);
+  const { user, setUser } = useShoppingCart();
 
   useEffect(() => {
     axios.get("/profile").then(({ data }) => {
