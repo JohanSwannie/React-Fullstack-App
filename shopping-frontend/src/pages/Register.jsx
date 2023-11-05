@@ -40,7 +40,7 @@ export default function Register() {
     <div>
       <form onSubmit={registerUser}>
         <h1 className="header">Register</h1>
-        <div className="container">
+        <div className="contain">
           <div className="image">
             <img src={musicnotes2} alt="music2" width="775" height="370" />
           </div>
