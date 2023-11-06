@@ -1,16 +1,27 @@
+import { useNavigate } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { formatCurrency } from "../utilities/formatCurrency";
 
 export function ShoppingList({ id, instrumentName, price, imgURL }) {
+  const navigate = useNavigate();
   const {
     getItemQuantity,
     increaseCartQuantity,
     decreaseCartQuantity,
     removeFromCart,
+    user,
   } = useShoppingCart();
 
   const quantity = getItemQuantity(id);
+
+  const checkUserToAddItem = () => {
+    if (user) {
+      increaseCartQuantity(id);
+    } else {
+      navigate("/login");
+    }
+  };
 
   return (
     <>
@@ -30,7 +41,7 @@ export function ShoppingList({ id, instrumentName, price, imgURL }) {
             {quantity === 0 ? (
               <Button
                 className="w-100 addCart_button"
-                onClick={() => increaseCartQuantity(id)}
+                onClick={checkUserToAddItem}
               >
                 + Add To Cart
               </Button>
