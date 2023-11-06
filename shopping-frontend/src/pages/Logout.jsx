@@ -19,6 +19,7 @@ export default function Logout() {
         document.getElementById("login").style.display = "block";
         document.getElementById("logout").style.display = "none";
         setUser(null);
+        localStorage.removeItem("currentUser");
         navigate("/login");
       })
       .catch((error) => {
