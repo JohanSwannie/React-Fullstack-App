@@ -14,9 +14,7 @@ const ShoppingCartProvider = ({ children }) => {
 
   const [user, setUser] = useLocalStorage1("currentUser");
 
-  const key = user ? user.name : null;
-
-  const [cartItems, setCartItems] = useLocalStorage2(key, []);
+  const [cartItems, setCartItems] = useLocalStorage2("swanniesMusic", []);
 
   const cartQuantity = cartItems.reduce(
     (quantity, item) => item.quantity + quantity,
