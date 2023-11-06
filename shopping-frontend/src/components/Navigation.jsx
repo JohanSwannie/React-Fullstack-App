@@ -28,8 +28,8 @@ function Navigation() {
   };
 
   const cartImageStyle = {
-    width: "1rem",
-    height: "2rem",
+    width: "3rem",
+    height: "3rem",
     position: "relative",
     right: "12rem",
   };
@@ -54,9 +54,9 @@ function Navigation() {
 
   return (
     <>
-      <Navbar sticky="top" className="shadow-lg mb-1 navbar">
+      <Navbar sticky="top" className="shadow-lg mb-1 bg-secondary navbar">
         <Container>
-          <Nav className="me-auto gap-5" onClick={playMusic}>
+          <Nav className="m-auto gap-5" onClick={playMusic}>
             <Nav.Link to="/" as={NavLink} className="navlink">
               Home
             </Nav.Link>
