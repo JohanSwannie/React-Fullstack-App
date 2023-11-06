@@ -8,9 +8,9 @@ export default function Home() {
   const { user } = useShoppingCart();
   return (
     <div className="home">
-      <h1 className="subheader">
+      <h3 className="subheader">
         Hi {user ? `${user.name}` : ""} - Welcome to Swannies Music Shop
-      </h1>
+      </h3>
       <img id="img" src={musicshop} alt="boat" />
     </div>
   );
